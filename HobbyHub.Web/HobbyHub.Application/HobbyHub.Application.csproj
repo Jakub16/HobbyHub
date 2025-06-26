@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="13.0.1" />
+      <PackageReference Include="FluentValidation" Version="11.11.0" />
+      <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+      <PackageReference Include="MediatR" Version="12.4.1" />
+      <PackageReference Include="MediatR.Extensions.FluentValidation.AspNetCore" Version="5.1.0" />
+      <PackageReference Include="Serilog.AspNetCore" Version="8.0.3" />
+      <PackageReference Include="StructureMap" Version="4.7.1" />
+      <PackageReference Include="StructureMap.Microsoft.DependencyInjection" Version="2.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\HobbyHub.Contract\HobbyHub.Contract.csproj" />
+        <ProjectReference Include="..\HobbyHub.Database.Infrastructure\HobbyHub.Database.Infrastructure.csproj" />
+        <ProjectReference Include="..\HobbyHub.Database\HobbyHub.Database.csproj" />
+        <ProjectReference Include="..\HobbyHub.Infrastructure\HobbyHub.Infrastructure.csproj" />
+        <ProjectReference Include="..\HobbyHub.Repository.Abstractions\HobbyHub.Repository.Abstractions.csproj" />
+        <ProjectReference Include="..\HobbyHub.S3.Driver.Abstractions\HobbyHub.S3.Driver.Abstractions.csproj" />
+        <ProjectReference Include="..\HobbyHub.UserIdentity.Provider\HobbyHub.UserIdentity.Provider.csproj" />
+    </ItemGroup>
+
+</Project>

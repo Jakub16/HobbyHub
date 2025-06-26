@@ -1,0 +1,15 @@
+trigger:
+- develop
+
+pool:
+  name: 'Azure Pipelines'
+
+variables:
+  buildConfiguration: "Release"
+
+steps:
+- script: dotnet test
+  displayName: tests
+
+- script: dotnet build --configuration $(buildConfiguration)
+  displayName: build
