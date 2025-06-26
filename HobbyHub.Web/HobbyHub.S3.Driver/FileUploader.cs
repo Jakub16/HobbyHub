@@ -11,7 +11,7 @@ public class FileUploader(ILogger log) : IFileUploader
 {
     private const string BucketName = "hobbyhub";
 
-    private static readonly BasicAWSCredentials Credentials = new ("AKIA2AUOO2HSA74YQG2H", "dSQNFW5Ucwh94DRJDj1iGNh5ForzKpmItH8XETtG");
+    private static readonly BasicAWSCredentials Credentials = new ("provide", "provide");
     private readonly AmazonS3Client _s3Client = new (Credentials, Amazon.RegionEndpoint.EUNorth1);
 
     public async Task<string> Send(string destination, string name, IFormFile file)
